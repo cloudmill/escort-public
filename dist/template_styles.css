@@ -21591,6 +21591,8 @@ header {
           background-color: #fff; } }
     header.__fixed .header-border {
       border-color: rgba(191, 191, 191, 0.2); }
+    header.__fixed .header_navigation__box {
+      display: none; }
   header.__translated {
     position: absolute;
     width: 100%;
