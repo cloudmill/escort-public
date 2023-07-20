@@ -1,0 +1,5 @@
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+/*! yalb - v0.1.2 - 2015-06-24
+* https://github.com/Fuzzyma/yalb
+* Copyright (c) 2015 Ulrich-Matthias Schäfer; Licensed MIT */
