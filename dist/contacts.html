@@ -828,17 +828,22 @@
 					<div class="contacts-filter-section__delimetr">
 						<form class="contacts-filter-section__form">
 							<div class="contacts-filter-section__selects">
-								<div class="select-wrapper contacts-filter-section__citys"><label class="invoice-request__form-label form-label d-sm-none">Страна</label><select class="js-select">
+								<div class="select-wrapper contacts-filter-section__citys sorting-wrapper"><select class="js-select sorting-select">
+										<option value="" disabled="disabled" selected="selected" hidden>Страна</option>
 										<option>Беларусь</option>
 										<option>Казахстан</option>
 									</select></div>
-								<div class="select-wrapper contacts-filter-section__citys"><select class="js-select">
+								<div class="select-wrapper contacts-filter-section__citys sorting-wrapper"><select class="js-select sorting-select">
+										<option value="" disabled="disabled" selected="selected" hidden>Город</option>
 										<option data-coord="55.754720, 37.617852">Москва</option>
 										<option data-coord="59.921197, 30.336647">Санкт-Петербург</option>
 										<option data-coord="57.623820, 39.885342">Ярославль</option>
 									</select></div>
-								<div class="select-wrapper contacts-filter-section__system-type"><select class="js-select">
-										<option>Тип Системы</option>
+								<div class="select-wrapper contacts-filter-section__system-type"><select class="js-select sorting-select">
+										<option value="" disabled="disabled" selected="selected" hidden>Тип Системы</option>
+										<option>Системы 1</option>
+										<option>Системы 2</option>
+										<option>Системы 3</option>
 									</select></div><button class="btn btn-primary">Найти</button><button class="btn ghost-btn">Сбросить фильтр</button>
 							</div>
 						</form>
