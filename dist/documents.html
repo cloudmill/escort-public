@@ -843,18 +843,18 @@
 							</div>
 							<div class="documents__selects">
 								<div class="documents__search form-group">
-									<div class="title">Поиск</div><input class="form-control" id="search" placeholder="Название, артикул оборудования">
+									<div class="title">Поиск</div><input class="form-control" id="search" data-documentation-input placeholder="Название, артикул оборудования">
 								</div>
 								<div class="documents__select-wrap">
 									<div class="title">Тип материала</div>
-									<div class="select-wrapper documents__system-type"><select class="js-select">
+									<div class="select-wrapper documents__system-type"><select class="js-select js-resetable-select">
 											<option>Выбрать</option>
 											<option>тип 1</option>
 											<option>тип 2</option>
 											<option>тип 3</option>
 										</select></div>
 								</div>
-								<div class="documents__btn-wrap"><button class="btn btn-primary">Найти</button><button class="btn ghost-btn">Очистить</button></div>
+								<div class="documents__btn-wrap"><button class="btn btn-primary">Найти</button><button class="btn ghost-btn" data-documents-reset>Очистить</button></div>
 							</div>
 							<div class="documents-tabs__content js-documentsChecked">
 								<div class="tab-content" id="documents_content">
