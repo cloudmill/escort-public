@@ -836,7 +836,7 @@
 					<div class="row">
 						<div class="col-xxl-9">
 							<div class="row">
-								<div class="col-lg-8 col-xxl-11 col-3xl-10"><span class="lead">Методика электро-акустического расчёта представлена в статье «Основы электроакустического расчёта» (О.&nbsp;Кочнов).</span></div>
+								<div class="col-lg-8 col-xxl-11 col-3xl-10"><span class="lead">On-line калькулятор работает по методике, представленной в учебном пособии <a href="#">"Системы оповещения и&nbsp;проводной связи. Учебное пособие." (Кочнов&nbsp;О.В., 2021)</a>.</span></div>
 							</div>
 						</div>
 						<div class="col-xxl-9">
@@ -893,7 +893,7 @@
 											<div class="form-group"><input class="form-control js-input-digits js-requared_calc_input" placeholder="0"></div><span class="input-row__description">— ширина диаграммы направленности (ШДН, град)</span>
 										</div>
 										<div class="input-row">
-											<div class="form-group"><input class="form-control js-input-digits" placeholder="0"></div><span class="input-row__description">— тип громкоговорителя (TYPE: 1 — потолочные, 2 — настенные, 3 — рупорные)</span>
+											<div class="form-group"><input class="form-control js-input-digits-type" placeholder="1" data-type-numbers="1-3"></div><span class="input-row__description">— тип громкоговорителя (TYPE: 1 — потолочные, 2 — настенные, 3 — рупорные)</span>
 										</div>
 									</div>
 									<div class="calculated__blocks-item">
@@ -924,32 +924,24 @@
 										<div class="hint_container">
 											<div class="input_rows">
 												<div class="input-row">
-													<div class="form-group"><input class="form-control js-input-digits js-requared_calc_input" placeholder="0"></div><span class="input-row__description">— высота потолков (H, м)</span>
-												</div>
-												<div class="input-row">
 													<div class="form-group"><input class="form-control js-input-digits" placeholder="0"></div><span class="input-row__description">— длина помещения (A, м)</span>
 												</div>
 												<div class="input-row">
 													<div class="form-group"><input class="form-control js-input-digits" placeholder="0"></div><span class="input-row__description">— ширина помещения (B, м)</span>
 												</div>
-											</div>
-											<div class="calculated-hint"><span class="calculated-hint__title">Примерные уровни постоянного шума</span>
-												<div class="calculated-hint__item"><span class="calculated-hint__name">Медицинские кабинеты, палаты</span><span class="calculated-hint__value">~ 35 дБ</span></div>
-												<div class="calculated-hint__item"><span class="calculated-hint__name">Учебные заведения, классы, конференц залы</span><span class="calculated-hint__value">~ 40 дБ</span></div>
-												<div class="calculated-hint__item"><span class="calculated-hint__name">Административные здания, офисы, холлы</span><span class="calculated-hint__value">~ 50 дБ</span></div>
-												<div class="calculated-hint__item"><span class="calculated-hint__name">Общепит, кафе, рестораны, тихая улица</span><span class="calculated-hint__value">~ 55 дБ</span></div>
-												<div class="calculated-hint__item"><span class="calculated-hint__name">Здание вокзала, спортивные залы, улица</span><span class="calculated-hint__value">~ 60 дБ</span></div>
-												<div class="calculated-hint__item"><span class="calculated-hint__name">Автостоянки, автостанции</span><span class="calculated-hint__value">~ 70 дБ</span></div>
-												<div class="calculated-hint__item"><span class="calculated-hint__name">Железнодорожная станция</span><span class="calculated-hint__value">~ 80 дБ</span></div>
-												<div class="calculated-hint__item"><span class="calculated-hint__name">Метрополитен</span><span class="calculated-hint__value">~ 85 дБ</span></div>
-												<div class="calculated-hint__item"><span class="calculated-hint__name">Промышленное предприятие</span><span class="calculated-hint__value">~ 90 дБ</span></div>
+												<div class="input-row">
+													<div class="form-group"><input class="form-control js-input-digits js-requared_calc_input" placeholder="0"></div><span class="input-row__description">— высота потолков (H, м)</span>
+												</div>
 											</div>
 										</div>
 									</div>
 									<div class="calculated__blocks-item">
-										<div class="calculated__blocks-title"><span class="calculated__blocks-num">4.</span>Дополнительные параметры:</div>
+										<div class="calculated__blocks-title"><span class="calculated__blocks-num">4.</span>Условия расчета:</div>
 										<div class="input-row">
-											<div class="form-group"><input class="form-control js-input-digits" placeholder="10"></div><span class="input-row__description">— запас по звуковому давлению (3Д, дБ)</span>
+											<div class="form-group"><input class="form-control js-input-digits" placeholder="15" value="15" disabled="disabled"></div><span class="input-row__description">— запас по звуковому давлению (3Д, дБ)</span>
+										</div>
+										<div class="input-row">
+											<div class="form-group"><input class="form-control js-input-digits" placeholder="10"></div><span class="input-row__description">— расстояние до расчетной точки(r, м)</span>
 										</div>
 										<div class="electro-calculation__check">
 											<div class="electro-calculation__check-row"><input class="form-check-input checkbox electro-calculation__checkbox" type="checkbox"><span>Учитывать отражения поверхности</span></div>
@@ -964,6 +956,9 @@
 													</select></div>
 											</div>
 										</div>
+									</div>
+									<div class="calculated__blocks-item">
+										<div class="calculated__blocks-title"><span class="calculated__blocks-num">5.</span>Схемы расстановки громкоговорителей:</div>
 										<div class="input-row">
 											<div class="form-group__activity">
 												<div class="form-group__activity-row">
@@ -997,9 +992,6 @@
 													</div><a class="form-group__activity-img" href="assets/images/calc-electtro-img6.jpeg" data-fancybox="gallery" data-caption="Расстановка настенных громкоговорителей в ШАХМАТНОМ порядке"><img src="assets/images/calc-electtro-img6.jpeg" alt=""></a>
 												</div>
 											</div>
-										</div>
-										<div class="input-row m-0">
-											<div class="form-group"><input class="form-control js-input-digits" placeholder="15"></div><span class="input-row__description">— расстояние от громкоговорителя до расчётной точки (г, м)</span>
 										</div><button class="btn btn-primary calculated__button js-calc_form_button" type="submit">Рассчитать</button>
 									</div>
 								</form>
