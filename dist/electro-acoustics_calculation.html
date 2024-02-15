@@ -897,12 +897,32 @@
 										</div>
 									</div>
 									<div class="calculated__blocks-item">
-										<div class="calculated__blocks-title"><span class="calculated__blocks-num">2.</span>Параметры озвучиваемого помещения:</div>
+										<div class="calculated__blocks-title"><span class="calculated__blocks-num">2.</span>Уровень шума в помещении:</div>
+										<div class="electro-calculation__radio">
+											<div class="electro-calculation__radio-btns">
+												<div class="electro-calculation__radio-btn"><input type="radio" name="noise-sound" data-noise-radio="empty"><span>Задать в ручную</span></div>
+												<div class="electro-calculation__radio-btn"><input type="radio" name="noise-sound" data-noise-radio="select"><span>Выбрать из списка</span></div>
+											</div>
+											<div class="electro-calculation__radio-select">
+												<div class="select-wrapper calculated__select"><select class="js-select">
+														<option>Дайте шума</option>
+														<option>шум</option>
+														<option>шумок(капецб маленбкий)</option>
+														<option>шумище(чутьб побольше)</option>
+														<option>шумозавр(ваще большой)</option>
+													</select></div>
+											</div>
+										</div>
+										<div class="input_rows">
+											<div class="input-row">
+												<div class="form-group"><input class="form-control js-input-digits" placeholder="0"></div><span class="input-row__description">— уровень шума в помещении (N, дБ)</span>
+											</div>
+										</div>
+									</div>
+									<div class="calculated__blocks-item">
+										<div class="calculated__blocks-title"><span class="calculated__blocks-num">3.</span>Параметры помещения:</div>
 										<div class="hint_container">
 											<div class="input_rows">
-												<div class="input-row">
-													<div class="form-group"><input class="form-control js-input-digits" placeholder="0"></div><span class="input-row__description">— уровень шума в помещении (N, дБ)</span>
-												</div>
 												<div class="input-row">
 													<div class="form-group"><input class="form-control js-input-digits js-requared_calc_input" placeholder="0"></div><span class="input-row__description">— высота потолков (H, м)</span>
 												</div>
@@ -927,7 +947,7 @@
 										</div>
 									</div>
 									<div class="calculated__blocks-item">
-										<div class="calculated__blocks-title"><span class="calculated__blocks-num">3.</span>Дополнительные параметры:</div>
+										<div class="calculated__blocks-title"><span class="calculated__blocks-num">4.</span>Дополнительные параметры:</div>
 										<div class="input-row">
 											<div class="form-group"><input class="form-control js-input-digits" placeholder="10"></div><span class="input-row__description">— запас по звуковому давлению (3Д, дБ)</span>
 										</div>
