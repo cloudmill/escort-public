@@ -844,7 +844,7 @@
 						</select></div>
 					<div class="row comparison_top">
 						<div class="col-lg-3 col-3xl-2">
-							<form method="POST" action="/"><label class="form-check-label m-b-xs"><input class="form-check-input checkbox" type="checkbox"><span class="m-l-xss">Показать только отличия</span></label>
+							<form method="POST" action="/"><label class="form-check-label m-b-xs label-flex"><input class="form-check-input checkbox" type="checkbox"><span class="m-l-xss">Показать только отличия</span></label>
 								<div class="compare-side"><a class="compare-side__item m-b-s" href="#">
 										<div class="compare-side__item-icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewbox="0 0 15 17" fill="none">
 												<path d="M10.1391 2.0919H9.13632V1.11024H5.86412V2.0919H4.86133V1.11024C4.86062 0.547289 5.30184 0.0828417 5.86412 0.0546875H9.13632C9.69859 0.0828417 10.1398 0.547289 10.1391 1.11024V2.0919Z" fill="#0058A1"></path>
@@ -864,22 +864,25 @@
 							<div class="js-fixed-block-wrapper fixed-block-wrapper js-compare-tab-target" data-container-width-selector=".js-compare-table[data-id=&quot;1&quot;] .js-swiper.compare-swiper-bottom" data-id="1">
 								<div class="js-fixed-block fixed-block js-swiper compare-swiper-top fixed_shadow">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide pb-3-fixed-block js-product">
-											<div class="js-swiper catalog-swiper m-b-xs">
-												<div class="swiper-wrapper">
-													<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
-													<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
-													<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
-													<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
-													<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
+										<div class="swiper-slide pb-3-fixed-block js-product"><a class="js-product__linkable" href="#">
+												<div class="js-swiper catalog-swiper m-b-xs">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
+														<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
+														<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
+														<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
+														<div class="swiper-slide"><img class="img-fluid center" src="assets/images/productComparison/productComparison-swiper-product_01.png" alt="img"></div>
+													</div>
+													<div class="swiper-pagination d-none d-sm-block"></div>
 												</div>
-												<div class="swiper-pagination d-none d-sm-block"></div>
-											</div>
-											<div class="d-flex flex-column">
-												<p class="mb-1"><a class="text-bold">ROXTON CP-8032</a></p>
-												<p class="text-gray text-small m-b-xss d-none d-sm-block">Абонентская вызывная панель</p>
-											</div>
-											<p class="price m-b-xss">16 406 ₽</p>
+												<div class="d-flex flex-column">
+													<p class="mb-1"></p>
+													<div class="text-bold">ROXTON CP-8032</div>
+													<p></p>
+													<p class="text-gray text-small m-b-xss d-none d-sm-block">Абонентская вызывная панель</p>
+												</div>
+												<p class="price m-b-xss">16 406 ₽</p>
+											</a>
 											<form method="POST" action="/">
 												<div class="d-inline-flex justify-content-between flex-wrap col-gap-5 row-gap-25">
 													<div class="d-flex col-gap-15 align-items-start">
