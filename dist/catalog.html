@@ -883,11 +883,25 @@
 										<div class="accordion-item m-b-m"><button class="accordion-button" id="headingFive" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Максимальный уровень звукового давления, дБ</button>
 											<div class="accordion-collapse collapse show" id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
 												<div class="accordion-body">
-													<div class="js-filter-range-wrapper" data-step="1">
-														<div class="d-flex gap-10 m-b-xs"><input class="form-control js-input-digits js-start-input js-filter-input" placeholder="с" data-diff="0" data-value="0"><input class="form-control js-input-digits js-end-input js-filter-input" placeholder="по" data-diff="25" data-value="25"></div>
+													<div class="js-filter-range-wrapper" data-step="0.1">
+														<div class="d-flex gap-10 m-b-xs"><input class="form-control js-input-digits js-start-input js-filter-input" placeholder="с" data-diff="-60" data-value="-60" step="0.1"><input class="form-control js-input-digits js-end-input js-filter-input" placeholder="по" data-diff="25" data-value="25" step="0.1"></div>
 														<div class="d-flex justify-content-between">
-															<p class="text-small text-bold js-start">10</p>
-															<p class="text-small text-bold js-end">103</p>
+															<p class="text-small text-bold js-start">-60</p>
+															<p class="text-small text-bold js-end">25</p>
+														</div>
+														<div class="js-filter-slider filter-slider"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion-item m-b-m"><button class="accordion-button" id="headingFive" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Максимальный уровень звукового давления, дБ</button>
+											<div class="accordion-collapse collapse show" id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+												<div class="accordion-body">
+													<div class="js-filter-range-wrapper" data-step="1">
+														<div class="d-flex gap-10 m-b-xs"><input class="form-control js-input-digits js-start-input js-filter-input" placeholder="с" data-diff="-60" data-value="-70" step="1"><input class="form-control js-input-digits js-end-input js-filter-input" placeholder="по" data-diff="35" data-value="25" step="1"></div>
+														<div class="d-flex justify-content-between">
+															<p class="text-small text-bold js-start">-60</p>
+															<p class="text-small text-bold js-end">25</p>
 														</div>
 														<div class="js-filter-slider filter-slider"></div>
 													</div>
